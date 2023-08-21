@@ -8,9 +8,13 @@ class Auto:
         self.motor = motor
         self.registro = registro
         Auto.cantidadCreados += 1
+        if self.asientos[i] == None:
+            pass
+        else:
+            cantidadAsientos += 1
     
     def cantidadAsientos(self):
-        return Asiento.cantidadAsientos
+        return Auto.cantidadAsientos
 
     def verificarIntegridad(self):
         if self.registro == Asiento.registro == Motor.registro:
