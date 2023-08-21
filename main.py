@@ -28,7 +28,7 @@ class Asiento:
         self.precio = precio
         self.registro = registro
         Asiento.listaAsientos.append
-        if Asiento.cantidadAsientos == None:
+        if Asiento.listaAsientos[i] == None:
             pass
         else:
              Asiento.cantidadAsientos += 1
