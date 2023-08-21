@@ -21,17 +21,10 @@ class Auto:
 
 
 class Asiento:
-    listaAsientos = []
-    cantidadAsientos = 0
     def __init__(self, color, precio, registro):
         self.color = color
         self.precio = precio
         self.registro = registro
-        Asiento.listaAsientos.append
-        if Asiento.listaAsientos[i] == None:
-            pass
-        else:
-             Asiento.cantidadAsientos += 1
 
     def cambiarColor(self, nuevoColor):
         if nuevoColor == "rojo":
