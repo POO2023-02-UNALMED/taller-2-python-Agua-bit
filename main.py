@@ -10,7 +10,11 @@ class Auto:
         Auto.cantidadCreados += 1
     
     def cantidadAsientos(self):
-        return Auto.cantidadAsientos
+        asientosTotales = 0
+        for i in self.asientos:
+            if type(i) == Asiento:
+                asientosTotales += 1
+        return asientosTotales
 
     def verificarIntegridad(self):
         if self.registro == Asiento.registro == Motor.registro:
